@@ -1,6 +1,7 @@
 @extends('homepage.layouts.app')
  
 @section('title', 'Homepage')
+
  
 @section('content')
    
@@ -48,14 +49,8 @@
                                 <div class="text-center">
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">Apple Lime</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
+
+                                
                                     <!-- Product price-->
                                     <span class="text-muted text-decoration-line-through">₱600</span>
                                     ₱400
@@ -93,22 +88,15 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0507/3708/6660/products/BottleGreen.png?v=1672916029" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
+                                    <h5 class="fw-bolder">Geekvape B100 (Aegis Boost Pro 2) Kit 100W</h5>
+                                    
                                     <!-- Product price-->
-                                    $40.00
+                                    ₱4999
                                 </div>
                             </div>
                             <!-- Product actions-->
@@ -122,15 +110,15 @@
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0477/0791/4398/products/IN_B_front_f5c05d6f-56da-497f-a253-46bafdd05b37_grande.png?v=1653354821" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Sale Item</h5>
+                                    <h5 class="fw-bolder">Relx Infinity</h5>
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
+                                    <span class="text-muted text-decoration-line-through">₱1700</span>
+                                    ₱1500
                                 </div>
                             </div>
                             <!-- Product actions-->
@@ -142,19 +130,19 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0507/3708/6660/products/GEEKVAPEB10021700KIT-_4.jpg?v=1635328051" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Fancy Product</h5>
+                                    <h5 class="fw-bolder">Geekvape B100</h5>
                                     <!-- Product price-->
-                                    $120.00 - $280.00
+                                    ₱1599
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
                             </div>
                         </div>
                     </div>
@@ -163,23 +151,15 @@
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img class="card-img-top" src="https://images.tcdn.com.br/img/img_prod/1060396/kit_pod_aegis_boost_plus_3_em_1_geekvape_17307_1_2be96d174075340df91e0f87626f63c8.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Special Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
+                                    <h5 class="fw-bolder">Kit pod Aegis Boost Plus 3 em 1</h5>
+                            
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$20.00</span>
-                                    $18.00
+                                    ₱1200
                                 </div>
                             </div>
                             <!-- Product actions-->
@@ -191,22 +171,15 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0477/0791/4398/products/L1VzZXJzL3JlbHgvTGlicmFyeS9BcHBsaWNhdGlvbiBTdXBwb3J0L0RpbmdUYWxrTWFjLzI5Mjg5MzY1NjNfdjIvSW1hZ2VGaWxlcy85OTI4ODMwOC83OTEzNDAyOTExXzYyMTM4NjUwMTY2X0FydF9TaWRlXzMuanBn_600x600.jpg?v=1655708978" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
+                                    <h5 class="fw-bolder">Relx Artisan</h5>
+                                   
                                     <!-- Product price-->
-                                    $40.00
+                                    ₱1650
                                 </div>
                             </div>
                             <!-- Product actions-->
