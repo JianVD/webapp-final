@@ -9,8 +9,12 @@ use Illuminate\Support\Facades\Hash;
 
 
 
+
+
 class UserController extends Controller
 {
+    
+
     
     public function index()
     {
@@ -78,8 +82,11 @@ class UserController extends Controller
     }
 
    
-    public function destroy($id)
+    public function delete($id)
     {
-       //
+        User::where('id', '=', $id)->delete();
+        return redirect()->back()->with('status', 'Deleted User Successfuly!');
     }
+
+   
 }

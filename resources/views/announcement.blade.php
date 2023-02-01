@@ -1,4 +1,3 @@
-
 <x-app-layout>
 
     <div class="flex flex-wrap bg-gray-100 w-full h-screen">
@@ -45,7 +44,7 @@
             </div>
             <ul class="space-y-2 text-sm">
                 <li>
-                    <a href="/dashboard" class="flex items-center space-x-3 text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200">
+                    <a href="{{ url ('dashboard') }}" class="flex items-center space-x-3 text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200">
                         <span class="text-gray-600">
                             <svg class="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -82,72 +81,22 @@
         <div class="w-9/12">
         
             <div class="p-4 text-gray-500">
-
-            
-                <div class="py-5">
-                    @if ( session('status') )
-                        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 my-5">
-                            <div class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-gray-800 dark:text-green-400" role="alert">
-                                <span class="font-medium">Success alert!</span> {{ session('status') }} 
-                            </div>
-                        </div>
-                    @endif
-            
+                <div class="py-12">
                     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                         <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                            <div class="p-3 text-gray-900 dark:text-gray-100">
+                            <div class="p-6 text-gray-900 dark:text-gray-100">
             
-            
-                                <a href="{{ url('/users/add') }}">
-                                    <button class="float-right rounded-full bg-green-500 p-1 hover:bg-zinc-50">
-                                        Add Users
-                                    </button>
-                                </a>
-                                
-                                <table class="table-auto w-full">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Email</th>
-                                            <th>Actions</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-            
-                                        @foreach ($users as $user)
-                                        <form method="POST" action="{{ url('/users/delete/' . $user->id) }}"> 
-                                            @csrf 
-                                            @method('delete')
-                                            <tr>
-                                                <td> {{ $user->name }} </td>
-                                                <td class="text-center"> {{ $user->email }}</td>
-                                                <td class="text-center">
-                                                    <a href="{{ url('/users/update/' . $user->id) }}">
-                                                        <button class="rounded-none bg-slate-300 p-1 hover:bg-zinc-50">Update</button>
-                                                    </a>
-                                                    <a href="">
-                                                        <button class="rounded-none bg-slate-300 p-1 hover:bg-zinc-50">Change Password</button>
-                                                    </a>
-                                                    <a>
-                                                        <button class="rounded-none bg-slate-300 p-1 hover:bg-zinc-50">Delete</button>
-                                                    </form>
-                                                </a>
-                                                </td>
-                                            </tr>
-                                        @endforeach
-            
-                                    </tbody>
-                                </table>
-            
-                                
-                               
-            
+                               <h1> patya ko {{Auth::user()->name}} </h1>
+                            
                             </div>
                         </div>
                     </div>
                 </div>
             
+               
+            
             </div>
         </div>
     </div>
+
 </x-app-layout>

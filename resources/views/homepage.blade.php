@@ -21,7 +21,7 @@
 
       <div class="row">
         <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/me.jpg" class="img-fluid" alt="">
+          <img src="me.jpg" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>Company CEO</h3>
@@ -175,7 +175,7 @@
      
 
 
-    <!-- ======= About Me ======= -->
+    <!-- ======= About dev ======= -->
     <div class="about-me container">
 
         <div class="section-title">
@@ -184,7 +184,7 @@
   
         <div class="row">
             <div class="center px-100" style="padding-left: 400px;  padding-right: 400px;">
-            <img src="assets/img/me.jpg" class="img-fluid" alt="">
+            <img src="dev.jpg" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-0 pt-4 pt-lg-0 content text-center" data-aos="fade-left">
@@ -201,8 +201,8 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Portfolio</h2>
-        <p>My Works</p>
+        <h2>VAPE</h2>
+        <p>Products</p>
       </div>
 
       <div class="row">
@@ -395,6 +395,24 @@
     </div>
   </section><!-- End Portfolio Section -->
 
+  <section id="announcement" class="announcement">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Announcement</h2>
+        <p>Brand Sales</p>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-accessories">
+          
+      </div>
+     
+      </div>
+
+    </div>
+  </section><!-- End Portfolio Section -->
+
+
+
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact">
     <div class="container">
@@ -409,7 +427,7 @@
         <div class="col-md-6 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-map"></i>
-            <h3>Address</h3>
+            <a class="nav-link" href="/map">Address</a> 
             <p>Butuan City, Philippines, 8600</p>
           </div>
         </div>
@@ -470,14 +488,6 @@
   
   <!-- End Contact Section -->
 
-
-  <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-  </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

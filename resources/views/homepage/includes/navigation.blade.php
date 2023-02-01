@@ -1,10 +1,11 @@
 <header id="header">
     <div class="container">
-
-      <h1><a href="">Black Haven - Vape Shop</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>The sanctuary for all <span class="bolded"><strong><em>vapers</span> .</h2>
+      
+      <h1 class="bg-image " style="background-image: url('https://c4.wallpaperflare.com/wallpaper/899/877/108/smoke-colorful-blue-pink-wallpaper-thumb.jpg')">
+        <a href="">Black Haven - Vape Shop</a></h1>
+      <h2 class="bg-image">The sanctuary for all <span class="bolded"><strong><em>vapers</span> .
+      
+      </h2>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -12,7 +13,9 @@
           <li><a class="nav-link" href="#about">About</a></li>
           <li><a class="nav-link" href="#portfolio">Products</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="#announcement">Announcement</a></li>
           <li><a class="nav-link" href="{{ url('/login') }}">Login</a></li>
+          <li><a class="nav-link" href="{{ url('/register') }}">Register</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

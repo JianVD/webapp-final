@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -21,9 +22,18 @@ Route::get('/', function () {
 });
 
 
+Route::get('/map', function () {
+        return view('map');
+});
+
 Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+        return view('dashboard');
+    })->middleware(['auth', 'verified'])->name('register');
+
+Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->middleware(['auth', 'verified'])->name('dashboard');
+
 
 Route::get('/users', [UserController::class, 'index'])
         ->middleware(['auth', 'verified'])
@@ -41,8 +51,14 @@ Route::get('/users/update/{id}', [UserController::class, 'show'])
 Route::post('/users/update/{id}', [UserController::class, 'update'])
         ->middleware(['auth', 'verified']);
 
-Route::post('/users/delete/{id}', [UserController::class, 'delete'])
-        ->middleware(['auth', 'verified']);
+Route::delete('/users/delete/{id}', [UserController::class, 'delete'])
+        ->middleware(['auth', 'verified'])
+        ->name('users');
+
+Route::get('/announcement', [AnnouncementController::class, 'announcement']);
+
+
+
 
 
 Route::middleware('auth')->group(function () {
