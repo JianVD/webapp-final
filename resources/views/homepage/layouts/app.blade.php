@@ -9,7 +9,7 @@
   <title>@yield('title')</title>
   
   <!-- Favicons -->
-  <link href="logo.png" rel="stylesheet">
+  <link href="logo.png" rel="icon">
   
 
   <!-- Google Fonts -->
