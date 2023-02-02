@@ -55,7 +55,7 @@ Route::delete('/users/delete/{id}', [UserController::class, 'delete'])
         ->middleware(['auth', 'verified'])
         ->name('users');
 
-Route::get('/announcement', [AnnouncementController::class, 'announcement']);
+
 
 
 

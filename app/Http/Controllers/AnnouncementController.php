@@ -8,16 +8,10 @@ use App\Models\User;
 
 class AnnouncementController extends Controller
 {
-    public function announcement(){
-
-        $users = User::first();
-        $user = [
-            'header' => 'Email',
-            'usertext' => 'You are a bitch',
-            'url' => url('/announcement'),
-            'ulol' => 'bitch'
-        ];
-
+    public function postAnnouncement(Request $request)
+    
+    {
         
     }
+        
 }

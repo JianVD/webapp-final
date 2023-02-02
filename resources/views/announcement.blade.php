@@ -79,14 +79,14 @@
         </div>
 
         <div class="w-9/12">
-        
+            <form method="post" action="{{ route('announcement') }}">
             <div class="p-4 text-gray-500">
                 <div class="py-12">
                     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                         <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                             <div class="p-6 text-gray-900 dark:text-gray-100">
             
-                               <h1> patya ko {{Auth::user()->name}} </h1>
+                                <button class="rounded-none bg-slate-300 p-1 hover:bg-zinc-50">Change Password</button>
                             
                             </div>
                         </div>
